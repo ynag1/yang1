@@ -1,5 +1,5 @@
 //! 获取用户基本信息
-const getUserInfo = () => {
+function getUserInfo(){
 	$.ajax({
 		type: 'GET',
 		url: '/my/userinfo',
