@@ -1,11 +1,13 @@
 //! 获取用户基本信息
-function getUserInfo(){
+function getUserInfo() {
+>>>>>>> ueer_yang
 	$.ajax({
 		type: 'GET',
 		url: '/my/userinfo',
 		data: null,
 		success: res => {
 			const { status, message } = res
+			if (status !== 0) return layer.msg(message)
 			renderAvatar(res.data)
 		}
 	})
