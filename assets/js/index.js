@@ -1,11 +1,12 @@
 //! 获取用户基本信息
-const getUserInfo = () => {
+function getUserInfo() {
 	$.ajax({
 		type: 'GET',
 		url: '/my/userinfo',
 		data: null,
 		success: res => {
 			const { status, message } = res
+			if (status !== 0) return layer.msg(message)
 			renderAvatar(res.data)
 		}
 	})
