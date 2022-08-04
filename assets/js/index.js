@@ -1,6 +1,6 @@
 //! 获取用户基本信息
 function getUserInfo() {
->>>>>>> ueer_yang
+
 	$.ajax({
 		type: 'GET',
 		url: '/my/userinfo',
