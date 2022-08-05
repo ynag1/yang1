@@ -14,7 +14,9 @@ body {
 	align-items: center;
 }
 /* 修改 form 表单样式 */
-#form-add {
-  padding-top: 20px;
-  padding-right: 30px;
+
+#form-add,
+#form-edit {
+    padding-top: 20px;
+    padding-right: 30px;
 }
